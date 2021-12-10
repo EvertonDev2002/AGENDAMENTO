@@ -1,0 +1,10 @@
+<table>
+  {{#each usuarios}}
+    <tr>
+      <td>{{this.cpf}}</td>
+      <td>{{this.nome}}</td>
+      <td><a href="/deletar/{{cpf}}"> <button> excluir</button></a> </td>
+      <td><a href="/atualizar/{{cpf}}/{{nome}}"> <button> EDITAR</button></a></td>
+    </tr>
+  {{/each}}
+</table>
